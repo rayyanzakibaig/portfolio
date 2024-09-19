@@ -1,20 +1,3 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
   /**
@@ -829,6 +812,13 @@ main {
   line-height: 1.6;
 }
 
+.company-name {
+    font-size: 1em; /* Adjust size as needed */
+    font-weight: 500;
+    color: #0071e3;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
 
 /**
  * skills 
