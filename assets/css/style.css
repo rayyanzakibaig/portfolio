@@ -815,9 +815,9 @@ main {
 .company-name {
     font-size: 1em; /* Adjust size as needed */
     font-weight: 500;
-    color: #0071e3;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    color: #91b1eb;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
 /**
