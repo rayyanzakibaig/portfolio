@@ -157,37 +157,3 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-//modal
-// Portfolio project variables
-const projectItems = document.querySelectorAll("[data-project-item]");
-const projectModalContainer = document.querySelector("[data-modal-container]");
-const projectModalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const projectOverlay = document.querySelector("[data-overlay]");
-
-// Modal variables
-const projectModalImg = document.querySelector("[data-modal-img]");
-const projectModalTitle = document.querySelector("[data-modal-title]");
-const projectModalText = document.querySelector("[data-modal-text]");
-
-// Modal toggle function
-const projectModalFunc = function () {
-  projectModalContainer.classList.toggle("active");
-  projectOverlay.classList.toggle("active");
-};
-
-// Add click event to all portfolio items
-for (let i = 0; i < projectItems.length; i++) {
-  projectItems[i].addEventListener("click", function () {
-    projectModalImg.src = this.querySelector("[data-project-img]").src;
-    projectModalImg.alt = this.querySelector("[data-project-img]").alt;
-    projectModalTitle.innerHTML = this.querySelector("[data-project-title]").innerHTML;
-    projectModalText.innerHTML = this.querySelector("[data-project-description]").innerHTML;
-
-    projectModalFunc(); // Open modal with project details
-  });
-}
-
-// Add click event to modal close button and overlay to close modal
-projectModalCloseBtn.addEventListener("click", projectModalFunc);
-projectOverlay.addEventListener("click", projectModalFunc);
-
