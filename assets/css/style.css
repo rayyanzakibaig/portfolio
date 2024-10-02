@@ -301,11 +301,15 @@ main {
 .sidebar {
   margin-bottom: 15px;
   max-height: 112px;
+  width: 300px; /* adjust the width as needed */
   overflow: hidden;
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 405px; }
+.sidebar.active { 
+	max-height: 405px; 
+	width: 300px; /* Ensure width is consistent */
+}
 
 .sidebar-info {
   position: relative;
@@ -395,8 +399,8 @@ main {
 }
 
 .contact-info {
-  max-width: calc(100% - 46px);
-  width: calc(100% - 46px);
+  max-width: 100% 	/* calc (100% - 46px); */
+  width: 100%		/* calc(100% - 46px); */
 }
 
 .contact-title {
