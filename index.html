@@ -7,19 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rayyan's Portfolio</title>
 
-  <!--
-    - favicon
-  -->
+  <!-- Favicon -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -27,210 +21,662 @@
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
-
+  <!-- Main Container -->
   <main>
 
-    <!--
-      - #SIDEBAR
-    -->
-
+    <!-- Sidebar -->
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
-
+        
+        <!-- Avatar -->
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Rayyan ZakiBaig" width="80">
+          <img src="./assets/images/my-avatar.png" alt="Rayyan Zakibaig" width="80">
         </figure>
 
+        <!-- Info Content -->
         <div class="info-content">
           <h1 class="name" title="Rayyan Zakibaig">Rayyan Zakibaig</h1>
-
           <p class="title">UI/UX Designer</p>
+
+          <!-- Resume Button -->
+          <a href="./path/to/your/resume.pdf" download>
+            <p class="resume-button">Resume</p>
+          </a>
         </div>
 
+        <!-- Contact Toggle Button -->
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
-
           <ion-icon name="chevron-down"></ion-icon>
         </button>
 
       </div>
 
+      <!-- Expanded Contact Info -->
       <div class="sidebar-info_more">
 
         <div class="separator"></div>
 
+        <!-- Contact List -->
         <ul class="contacts-list">
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
               <a href="mailto:rzakibaig@gmail.com" class="contact-link">rzakibaig@gmail.com</a>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Phone</p>
-
               <a href="tel:+3464429539" class="contact-link">+3464429539</a>
             </div>
-
           </li>
 
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">29 October, 2004</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Location</p>
-
               <address>Houston, Texas</address>
             </div>
-
           </li>
 
         </ul>
 
         <div class="separator"></div>
 
+        <!-- Social Links -->
         <ul class="social-list">
-
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://www.linkedin.com/in/rayyan-zakibaig" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
         </ul>
 
       </div>
 
     </aside>
 
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
+    <!-- Main Content -->
     <div class="main-content">
 
-      <!--
-        - #NAVBAR
-      -->
-
+      <!-- Navbar -->
       <nav class="navbar">
-
         <ul class="navbar-list">
-
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link>About</button>
           </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li> 
+
+<!-- 
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>investate-holdings-project</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link>american-emr-project</button>
           </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Test</button>
-          </li>
-
+-->
         </ul>
-
       </nav>
 
+      <!-- About Section -->
+      <article class="about active" data-page="about">
 
+        <!-- About Me Section -->
+        <div class="experience-section">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-     <!-- 
-        - #ABOUT
-      -->
+          <section class="about-text">
+            <p class="description1">
+              Hi! I'm Rayyan, a Computer Science student at the University of Houston passionate about UX Design.
+              Since early on, I've been a tech enthusiast and creative at heart. My drive for creative expression began with
+              drawing, transitioning to photography and design.
+            </p>
+            <p class="description1">
+              UX perfectly blends my interests in tech and design. I've enrolled in UX courses to enhance my skills and
+              bring my ideas to life. With a foundation in design thinking, I am experienced with tools like Figma,
+              InDesign, Photoshop, Lightroom, Framer, HTML, JavaScript, CSS, C++, Python, and ASM.
+            </p>
+          </section>
 
-      <article class="about  active" data-page="about">
+          <!-- Experience Section -->
+          <header>
+            <h2 class="h2 article-title">Experience</h2>
+          </header>
 
+          <!-- Experience Items -->
+          <div class="experience-item">
+            <div class="experience-date">Jun 2024 — Aug 2024</div>
+            <div class="experience-content">
+              <h3>American EMR</h3>
+              <p class="position">Product Design Intern</p>
+              <p class="description">Designed mobile application for a world-class patient profile system.</p>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-date">2022 — 2022</div>
+            <div class="experience-content">
+              <h3>Investate Holdings</h3>
+              <p class="position">Website Developer</p>
+              <p class="description">Designed and developed a B2B-facing portfolio website.</p>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-date">Dec 2022</div>
+            <div class="experience-content">
+              <h3>Life Span Euro Med Spa</h3>
+              <p class="position">Designer Contract</p>
+              <p class="description">Designed promotional banners for print while maintaining visual brand identity.</p>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-date">Aug 2018 - Dec 2022</div>
+            <div class="experience-content">
+              <h3>Executive Concrete Solutions</h3>
+              <p class="position">Website Designer Contract</p>
+              <p class="description">Consulted with client to identify business requirements and designed features like a photo gallery, contact form, and about page with multiple revisions.</p>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-date">Aug 2018 - Dec 2022</div>
+            <div class="experience-content">
+              <h3>Klein Cain High School</h3>
+              <p class="position">Photographer & Designer</p>
+              <p class="description">Designed sections in high school yearbook for sports, dance, arts, and school culture using Adobe InDesign, Photoshop, and Lightroom.</p>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-date">Aug 2018</div>
+            <div class="experience-content">
+              <h3>Scholastic Silver Key Award</h3>
+              <p class="position">Artist</p>
+              <p class="description">Won the Scholastic Silver Key Award for a mixed-media art piece using India Ink, plastic, sponge, and other unique materials.</p>
+            </div>
+          </div>
+
+          <!-- Clients Section -->
+          <h2 class="h2 article-title">Clients</h2>
+
+          <ul class="clients-list has-scrollbar">
+            <li class="clients-item">
+              <a href="#"><img src="./assets/images/investate-holdings-logo.png" alt="Investate Holdings logo"></a>
+            </li>
+            <li class="clients-item">
+              <a href="#"><img src="./assets/images/lifespan-logo.png" alt="Life Span Euro Med Spa logo"></a>
+            </li>
+            <li class="clients-item">
+              <a href="#"><img src="./assets/images/ecs-logo.png" alt="Executive Concrete Solutions logo"></a>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      
+
+      <!-- Portfolio Page -->
+      <article class="portfolio" data-page="portfolio">
+        <div class="experience-section">
+        
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title">Portfolio</h2>
         </header>
 
-        <section class="about-text">
-          <p>
-            Hi! I'm Rayyan, a Computer Science student at the University of Houston passionate about UX Design.
-            Since early on, I've been a tech enthusiast and creative at heart. 
-            My drive for creative expression manifested with drawing, 
-            which later transitioned to photography and design. 
-            
-            
-          </p>
+        <!-- Portfolio projects -->
+        <section class="portfolio-posts">
+          <ul class="portfolio-posts-list">
 
-          <p>
-            UX perfectly blends my interests in tech and design, 
-            so I've enrolled in UX courses to build on my skills and bring my ideas to life.
-            Alongside my prior foundation in design thinking, I am experienced with tools like  
-            Figma, InDesign, Photoshop, Lightroom, Framer, HTML, JavaScript, CSS, C++, Python, ASM.
-          </p>
+        <!--AmericanEMR project-->
+        <li class="portfolio-post-item">
+          <a href="javascript:void(0);" data-page="american-emr-project">
+            <figure class="portfolio-banner-box">
+              <img src="./assets/images/-screens.png">
+            </figure>
+
+            <div class="portfolio-content">
+              <div class="portfolio-meta">
+                <p class="portfolio-category">UI/UX Design</p>
+                <span class="dot"></span>
+                <time datetime="2022-08-23">2024</time>
+              </div>
+
+              <h3 class="h3 portfolio-item-title">American EMR</h3>
+              <p class="portfolio-text">
+                A mobile application for a patient portal.
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <!--investate project-->
+        <li class="portfolio-post-item">
+          <a href="javascript:void(0);" data-page="investate-holdings-project">
+            <figure class="portfolio-banner-box">
+              <img src="./assets/images/investate-screens.png" alt="Investate" loading="lazy">
+            </figure>
+
+            <div class="portfolio-content">
+              <div class="portfolio-meta">
+                <p class="portfolio-category">Web Design</p>
+                <span class="dot"></span>
+                <time datetime="2022-02-23">2022</time>
+              </div>
+
+              <h3 class="h3 portfolio-item-title">Investate Holdings</h3>
+              <p class="portfolio-text">
+                A B2B portfolio website for a corportate housing
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <!--audi poster-->
+        <li class="portfolio-post-item2">
+          <a href="javascript:void(0);" data-page="portfolio" data-modal-trigger>
+            <figure class="portfolio-banner-box">
+              <img src="./assets/images/audir8.png">
+            </figure>
+
+            <div class="portfolio-content">
+              <div class="portfolio-meta">
+                <p class="portfolio-category">Graphic Design</p>
+                <span class="dot"></span>
+                <time datetime="2022-02-23">November 2024</time>
+              </div>
+              <h3 class="h3 portfolio-item-title">Audi Poster</h3>
+              <p class="portfolio-text">Passion Project</p>
+            </div>
+          </a>
+        </li>
+
+        <!--porsche poster-->
+        <li class="portfolio-post-item2">
+          <a href="javascript:void(0);" data-page="portfolio" data-modal-trigger>
+            <figure class="portfolio-banner-box">
+              <img src="./assets/images/porsche-poster.png" alt="Porsche" loading="lazy">
+            </figure>
+
+            <div class="portfolio-content">
+              <div class="portfolio-meta">
+                <p class="portfolio-category">Graphic Design</p>
+                <span class="dot"></span>
+                <time datetime="2022-02-23">September 2024</time>
+              </div>
+              <h3 class="h3 portfolio-item-title">Porsche Poster</h3>
+              <p class="portfolio-text">Passion Project</p>
+            </div>
+          </a>
+        </li>
+
+        <!--ink lake-->
+        <li class="portfolio-post-item2">
+          <a href="javascript:void(0);" data-page="portfolio" data-modal-trigger>
+            <figure class="portfolio-banner-box">
+              <img src="./assets/images/ink-lake.png">
+            </figure>
+
+            <div class="portfolio-content">
+              <div class="portfolio-meta">
+                <p class="portfolio-category">Art</p>
+                <span class="dot"></span>
+                <time datetime="2022-02-23">September 2018</time>
+              </div>
+
+              <h3 class="h3 portfolio-item-title">Ink's Lake</h3>
+              <p class="portfolio-text">
+                My art project that won the Scholastic Silver Key Award
+              </p>
+            </div>
+          </a>
+        </li>
+
+          </ul>
         </section>
+      </article>
+
+<!-- Modal Container -->
+<div class="modal-container" data-modal-container>
+  <!-- Overlay -->
+  <div class="overlay" data-overlay></div>
+
+  <!-- Modal Content -->
+  <div class="project-modal">
+    <button class="modal-close-btn" data-modal-close-btn>×</button>
+    <div class="modal-img-wrapper">
+      <img src="" alt="" data-modal-img>
+    </div>
+    <div class="modal-content">
+      <h3 class="modal-title" data-modal-title></h3>
+      <p class="modal-text" data-modal-text></p>
+    </div>
+  </div>
+</div>
+
+
+    <!--American EMR Case Study-->
+    <article class="american-emr-project" data-page="american-emr-project">
+      <div class="experience-section">
+      <header>
+        <h2 class="h2 article-title">American EMR</h2>
+      </header>
+        
+      <a href="https://investateholdings.com" target="_blank" class="project-button" margin-bottom="10px;">See Website</a>
+          
+        <!-- Case Study: Context -->
+          <section class="project-section">
+            <div class="project-content">
+              <h3>Context</h3>
+              <ul class="project-details">
+                <li>American EMR is a cloud-based software solution designed to streamline practice management for healthcare providers. It offers features such as customizable templates for documentation, inventory management, detailed financial reporting, and task management tools. Additionally, it includes patient portals for improved communication, catering to the operational needs of various medical specialties. This platform aims to enhance efficiency, organization, and patient care for medical practices.</li>
+              </ul>
+            </div>
+          </section>
+      </div>
+    </article>
+
+
+    <!-- #Investate Case Study --> 
+    <article class="investate-holdings-project" data-page="investate-holdings-project">
+      <div class="experience-section">
+      <header>
+        <h2 class="h2 article-title">Investate Holdings</h2>
+      </header>
+        
+      <a href="https://investateholdings.com" target="_blank" class="project-button" margin-bottom="10px;">See Website</a>
+          
+        <!-- Case Study: Context -->
+          <section class="project-section">
+            <div class="project-content">
+              <h3>Context</h3>
+              <ul class="project-details">
+                <li>Investate Holdings is a corporate housing company specializing in providing short-term accommodations for business travelers. The company manages a diverse portfolio of properties, including both owned and leased assets.</li>
+                <li>As a rapidly expanding organization, Investate Holdings is strategically expanding into new locations to meet the growing demand for short term rentals.</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Case Study: Part 1 - Project Overview -->
+          <section class="project-section">
+            <div class="project-content">
+              <h3>Overview</h3>
+              <ul class="project-details">
+                <li><strong>Timeline:</strong> 3 days</li>
+                <li><strong>My Role:</strong> UX/UI Designer</li>
+                <li><strong>Tools Used:</strong> Figma, HTML, CSS</li>
+                <li><strong>Objective:</strong> Create a responsive website that communicates Investate Holdings' services, builds trust, and drives client inquiries.</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Case Study: Part 2 - Problem Statement & Goals -->
+          <section class="project-section">
+            <div class="project-content">
+              <h3>Problem Statement</h3>
+              <ul class="project-details">
+                <li>Despite its rapid expansion and growing client base, Investate Holdings lacked a professional website to effectively pitch its business to clients and investors. This gap hindered its ability to establish trust, showcase services, and communicate its value proposition in a competitive market.</li>
+
+
+              <h6>Goals</h6>
+              <ul class="project-details">
+                <li><strong>•</strong> Create a b2b-centric website that highlights Investate Holdings' services.</li>
+                <li><strong>•</strong> Establish trust through a modern and professional design.</li>
+                <li><strong>•</strong> Streamline navigation for an easy user experience.</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Case Study: Part 3 - Design Process -->
+          <section class="project-section">
+            <div class="project-content">
+              <h3>Design Process</h3>
+              <p class="project-description">
+                The Investate Holdings website was crafted using a systematic and user-focused design process to ensure both business goals and user needs were met effectively.
+              </p>
+
+              <!-- Step 1 Research -->
+              <div class="design-step">
+                <div class="project-details">
+                <h6>1. Research & Discovery</h6>
+                <li>I first gathered info on who Investate is seeking to target with this website. asking what their biggest risks and drawbacks are with their building units. I came to find that alot of units are vacant, and of the ones that are leased to tenants, there's no telling what the condition of the unit will be once they move out </li>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="project-details">
+                <h6>2. User Personas</h6>
+                <li>After learning Investate's business model. I understood the type of people that Investate is seeking to target with a website. They are building owners who are facing problems with traditional tenants and seeking to minimize their risk while ensuring a steady income.</li>
+              </div>
+          </section>
+
+          <!-- Case Study: Part 3 - Ideation and Wireframing -->
+          <section class="project-section">
+            <div class="project-content">
+              <h3>Ideation & Wireframing</h3>
+              <ul class="project-details">
+
+              <!-- Step 3 -->
+              <div class="design-step">
+                <h6>Information Architecture</h6>
+                <li>Structured the site with four key sections: Home, About Us, Why Choose Us, Contact.</li>
+                <li>Prioritized ease of navigation with a sticky menu, one page scroll website, and CTAs.</li>
+              </div>
+
+              <!-- Step 4 -->
+              <div class="design-step">
+                <h6>Wireframing</h6>
+                <img src="assets/images/wireframe1.jpg" class="rounded-image" style="margin-bottom: 20px;">
+                <img src="assets/images/wireframe2.jpg" class="rounded-image" style="margin-bottom: 20px;">
+                <li>Created quick low-fidelity wireframes on paper to explore layouts and functionality. Focused on concisely conveying the business model for clients.</li>
+              </div>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Case Study: Part 4 - Visual Design -->
+          <section class="project-section">
+            <div class="project-content">
+              <h3>Visual Design</h3>
+              <ul class="project-details">
+                <h6>Branding</h6>
+                <img src="assets/images/Branding.png" class="rounded-image" style="margin-bottom: 20px;"">
+                <li>Incorporated the brand’s black and white color scheme to convey trust and professionalism.</li>
+                <li><strong>Typography: </strong>Montserrat, sans-serif fonts for readability and modern aesthetic.</li>
+
+              <div class="design-step">
+                <h6>Responsive Design</h6>
+                <li>Created designs optimized for mobile, tablet, and desktop views.</li>
+              </div>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Case Study: Part 5 - Prototyping and Testing -->
+          <section class="project-section">
+            <div class="project-content">
+              <h3>Prototyping and Testing</h3>
+              <ul class="project-details">
+              
+                <!-- Step 6 -->
+              <div class="design-step">
+                <ul class="project-details">
+                  <h6>Usability Testing</h6>
+                  
+                <!-- Version 1 -->
+                <div class="responsive-grid">
+                  <img src="assets/images/why-us-v2.jpg" class="rounded-image">
+                  <div>
+                    <li><strong>Version 1</strong></li>
+                    <li>I initially wanted to use this design but found that with the depth of information I had, it caused too long of a paragraph under each photo and in order to make it look acceptable, I was having to make too many compromises like making both the subheading and paragraph text much smaller than preferred, which caused readability issues.</li>
+                  </div>
+                </div>
+
+                <!-- Version 2 -->
+                <div class="responsive-grid">
+                  <img src="assets/images/why-us.jpg" class="rounded-image">
+                  <div>
+                    <li><strong>Version 2</strong></li>
+                    <li>After conducting A/B testing, I decided to use a 3-row layout with two columns per row. This design leverages the natural left-to-right reading pattern, ensuring clarity and preventing distractions. By placing the image on the left and text on the right, the reader can easily follow the content without being interrupted, reinforcing the key message before moving to the next point.</li>
+                  </div>
+                </div>
+                </ul>
+              </div>
+          </section>
+
+          <!-- Case Study: - Visual Highlights -->          
+          <div class="project-content">
+          <h5>Visual Highlights</h5>
+          <img src="assets/images/HomeScreen.jpg" class="rounded-image">
+          <p style="text-align: right; margin-bottom: 2rem;">1. Hero Page</p>
+
+          <h5>About Us</h5>
+          <p style="text-align: center; margin-bottom: 1em;">Backstory for potential business partners to learn about the founders</p>
+          <img src="assets/images/about-us.png" class="rounded-image">
+          <p style="text-align: right;">2. About Us</p>
+
+          <h5>Benefits</h5>
+          <p style="text-align: center; margin-bottom: 1em;">Presenting the risks that buildings face and how a partnership would solve them</p>
+          <img src="assets/images/benefits.png" class="rounded-image">
+          <p style="text-align: right;">3. Benefits</p>
+
+          <h5>Selling Points</h5>
+          <p style="text-align: center; margin-bottom: 1em;">3 simple reasons why building owners should choose Investate over others</p>
+          <img src="assets/images/why-us.jpg" class="rounded-image">
+          <p style="text-align: right;">4. Why Us</p>
+       
+          <!-- Case Study: Reflection -->
+          <section class="project-section">
+            <div class="project-content">
+              <h3>Reflection</h3>
+              <ul class="project-details">
+                <li><strong>Challenges I faced: </strong>Managing conflicting stakeholder preferences while maintaining user focus.</li>
+                <li><strong>What I learned: </strong>Balancing business goals with user needs requires iterative communication and validation.</li>
+                <li><strong>Next Steps:</strong></li>
+                <li><strong>• </strong>Explore advanced interactivity, such as virtual tours for properties.</li>
+                <li><strong>• </strong>Incorporate analytics tracking to further optimize the design post-launch.</li>
+
+
+              <div class="design-step">
+                <h6>Responsive Design</h6>
+                <li>Created designs optimized for mobile, tablet, and desktop views.</li>
+              </div>
+              </ul>
+            </div>
+          </section>
+
+        <footer>
+          <a href="javascript:void(0);" class="project-button" id="backToProjectsButton">Back to Projects</a>
+        </footer>
+
+    </div>
+  </main>
+
+  <!-- Custom JavaScript -->
+
+  <!-- Ionicons CDN -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+
+      
+
+
+  <script>
+    // Function to handle navigation and show the specified page
+    function handleNavigation(page) {
+      // Hide all sections with the data-page attribute
+      document.querySelectorAll('article[data-page]').forEach(section => {
+        section.classList.remove('active');
+      });
+  
+      // Show the selected page if it exists
+      const selectedPage = document.querySelector(`[data-page="${page}"]`);
+      if (selectedPage) {
+        selectedPage.classList.add('active');
+      }
+  
+      // Update active class for navigation links
+      document.querySelectorAll('[data-nav-link]').forEach(link => {
+        link.classList.toggle('active', link.textContent.toLowerCase() === page);
+      });
+    }
+  
+    // Add event listener for the back button to show the portfolio page
+    document.getElementById("backToProjectsButton").addEventListener("click", function() {
+      handleNavigation("portfolio");
+    });
+  
+    // Add click event listeners to portfolio items for navigation
+    document.querySelectorAll('.portfolio-post-item a').forEach(item => {
+      item.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        handleNavigation(this.getAttribute('data-page'));
+      });
+    });
+  
+    // Add click event listeners to navigation links
+    document.querySelectorAll('[data-nav-link]').forEach(link => {
+      link.addEventListener('click', () => {
+        handleNavigation(link.textContent.toLowerCase());
+      });
+    });
+  </script>
+  
+
+  <!--
+    - custom js link
+  -->
+  <script src="assets/js/script.js"></script>
+
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  
+
+
+
+  
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <!--
           - service
-        -->
+        
 
         <section class="service">
 
@@ -249,7 +695,7 @@
                 <h4 class="h4 service-item-title">Web design</h4>
 
                 <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
+                  Modern and professional quality design.
                 </p>
               </div>
 
@@ -308,9 +754,9 @@
         </section>
 
 
-        <!--
+      
           - testimonials
-        -->
+        
 
         <section class="testimonials">
 
@@ -410,10 +856,11 @@
 
         </section>
 
-
+        -->      
+        
         <!--
           - testimonials modal
-        -->
+
 
         <div class="modal-container" data-modal-container>
 
@@ -455,207 +902,69 @@
 
         </div>
 
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
 
-        <section class="timeline">
 
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
 
-          <ol class="timeline-list">
 
-            <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">University Of Houston </h4>
-
-              <span>2024 — 2026</span>
-
-              <p class="timeline-text">
-                Bachelor's of Computer Science
-              <p class="timeline-text">
-                Transfer Excellence Scholarship
-              <p class="timeline-text">  
-                GPA: 4.0
-                
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">LoneStar College University-Park </h4>
-
-              <span>2022 — 2024</span>
-
-              <p class="timeline-text">
-                Associate of Computer Science
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Relevant Experience</h3>
-          </div>
-          <!--
-        - #chatgpt
-      -->
-<ol class="timeline-list">
-
-    <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">UX Designer</h4>
-        <h6 class="company-name">American EMR</h6>
-        <span>June 2024 — August 2024</span>
-        <p class="timeline-text">
-            Conducted user testing and identified pain points healthcare professionals face when interacting with patient portal software. Worked closely with developers to continuously iterate on designs. 
-        </p>
-    </li>
-  
-    <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Website Developer</h4>
-        <h6 class="company-name">Investate Holdings</h6>
-        <span>2015 — Present</span>
-        <p class="timeline-text">
-            Designed and developed a B2B-facing portfolio website for the business to present to prospective business partners.
-        </p>
-    </li>
-  
-    <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Designer Contract</h4>
-        <h6 class="company-name">LifeSpan Euro Med Spa</h6>
-        <span>December 2022</span>
-        <p class="timeline-text">
-            Designed multiple promotional banners for print use while maintaining visual brand identity.
-        </p>
-    </li>
-  
-    <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Website Design Contract</h4>
-        <h6 class="company-name">Executive Concrete Solutions</h6>
-        <span>December 2022</span>
-        <p class="timeline-text">
-            Consulted with the client to identify business requirements. Designed multiple features like photo gallery, contact form, about, etc. Revised multiple iterations until final product.
-        </p>
-    </li>
-  
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Photographer & Designer</h4>
-        <h6 class="company-name">Klein Cain High School</h6>
-        <span>August 2018-December 2022</span>
-        <p class="timeline-text">
-            Involved in the development of the high school yearbook. Designed several sections for sports, dance, arts, and school culture. Utulized Adobe InDesign, Photoshop, Lightroom.
-        </p>
-    </li>
-
-        <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Artist</h4>
-        <h6 class="company-name">Scholastic Silver Key Award</h6>
-        <span>August 2018</span>
-        <p class="timeline-text">
-            Won a silver key award for an artpiece made with a variety of tools such as markers, India ink, plastic, and sponge bringing out unique textures.
-        </p>
-    </li>
-
-</ol>
 
 <!--
         - #chatgpt
-      -->
+
         </section>
 
         <section class="skill">
-
           <h3 class="h3 skills-title">My Tools</h3>
-
           <ul class="skills-list content-card">
+            
+            <li class="skills-item">
+              <img src="./assets/images/figma.png" alt="Figma" width="30">
+              <h5 class="h5"></h5>
+            </li>
 
             <li class="skills-item">
+              <img src="./assets/images/framer.png" alt="Framer" width="30">
+              <h5 class="h5"></h5>
+            </li>
 
-                <h5 class="h5">Figma</h5>
-                <h5 class="h5">InDesign</h5>
-                <h5 class="h5">Photoshop</h5>
-                <h5 class="h5">Lightroom</h5>
+            <li class="skills-item">
+              <img src="./assets/images/indesign.png" alt="InDesign" width="30">
+              <h5 class="h5"></h5>
+            </li>
 
-  <!--
+            <li class="skills-item">
+              <img src="./assets/images/photoshop.png" alt="Photoshop" width="30">
+              <h5 class="h5"></h5>
+            </li>
+
+            <li class="skills-item">
+              <img src="./assets/images/lightroom.png" alt="Lightroom" width="30">
+              <h5 class="h5"></h5>
+            </li>
+
+            <li class="skills-item">
+              <img src="./assets/images/python.png" alt="Python" width="30">
+              <h5 class="h5"></h5>
+            </li>
+
+            <li class="skills-item">
+              <img src="./assets/images/html.png" alt="HTML" width="30"> 
+              <h5 class="h5"></h5>
+            </li>
+
+            <li class="skills-item">
+              <img src="./assets/images/css.png" alt="CSS" width="30">
+              <h5 class="h5"></h5>
+            </li>
+
+          </ul>
+        </section>
+
+  
               <div class="title-wrapper">
                 <h5 class="h5">Web design</h5>
                 <data value="80">80%</data>
@@ -706,7 +1015,6 @@
 
             </li>
 
-      -->
               
           </ul>
 
@@ -715,14 +1023,15 @@
       </article>
 
 
-
-
-
-      <!--
-        - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+
+
+<!--
+        - #PORTFOLIO
+
+
+      <article class="projects" data-page="projects">
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
@@ -981,262 +1290,30 @@
         </section>
 
       </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
-</html>
+-->
+
+
+<style>
+.responsive-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 3em; /* Space between rows */
+}
+
+.responsive-grid:last-of-type {
+  margin-bottom: 0; /* Prevent extra margin on the last row */
+}
+
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .responsive-grid {
+      grid-template-columns: 1fr;
+    }
+
+  .rounded-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+</style>
