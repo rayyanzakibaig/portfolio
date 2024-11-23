@@ -886,7 +886,6 @@ main {
   padding: 20px 0;
 }
 
-\*-----------------------------------*/
 
 /* Add horizontal alignment for larger screens */
 @media (min-width: 768px) {
@@ -934,6 +933,13 @@ main {
   margin-bottom: 0.75em;
   margin-top:1.5em;
   text-align: center;
+}
+
+.project-content h6 {
+  font-size: 1.25em;
+  color: #ffffff;
+  margin-bottom: 0.5em;
+  margin-top: 2em;
 }
 
 .project-description {
@@ -1243,7 +1249,25 @@ main {
   z-index: 1;
 }
 
+.portfolio-post-item2 > a {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  height: 100%;
+  box-shadow: var(--shadow-4);
+  border-radius: 16px;
+  z-index: 1;
+}
+
 .portfolio-post-item > a::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: var(--eerie-black-1);
+  z-index: -1;
+}
+
+.portfolio-post-item2 > a::before {
   content: "";
   position: absolute;
   inset: 1px;
@@ -1267,6 +1291,7 @@ main {
 }
 
 .portfolio-post-item > a:hover .portfolio-banner-box img { transform: scale(1.1); }
+.portfolio-post-item2 > a:hover .portfolio-banner-box img { transform: scale(1.1); }
 
 .portfolio-content { padding: 15px; }
 
@@ -1298,6 +1323,7 @@ main {
 }
 
 .portfolio-post-item > a:hover .portfolio-item-title { color: var(--blue); }
+.portfolio-post-item2 > a:hover .portfolio-item-title { color: var(--blue); }
 
 .portfolio-text {
   color: var(--light-gray);
@@ -1651,7 +1677,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     -webkit-line-clamp: 2;
   }
 
-  /* testimonials modal */
+  /* testimonials modal 
 
   .modal-container { padding: 20px; }
 
@@ -1683,6 +1709,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     flex-grow: 1;
     width: 35px;
   }
+  */
 
   /* clients */
 
@@ -1797,12 +1824,13 @@ textarea.form-input::-webkit-resizer { display: none; }
    * ABOUT
    */
 
-  /* testimonials modal */
+  /* testimonials modal 
 
   .testimonials-modal {
     gap: 35px;
     max-width: 680px;
   }
+  */
 
   .modal-avatar-box img { width: 80px; }
 
@@ -2178,7 +2206,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 /* Modal Styling */
 .project-modal {
-  background: #fff;
+  background: #ffffff00;
   position: relative;
   padding: 15px;
   margin: 10px;
@@ -2204,10 +2232,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 /* Modal Close Button */
 .modal-close-btn {
   position: absolute;
-  top: 15px;
-  right: 15px;
-  background: #333;
+  top: 30px;
+  right: 30px;
   color: #fff;
+  background: #333;
   border: none;
   border-radius: 50%;
   width: 32px;
@@ -2223,6 +2251,41 @@ textarea.form-input::-webkit-resizer { display: none; }
 .modal-close-btn:hover {
   opacity: 1;
 }
+
+/* Modal Arrows - Common Styles */
+.modal-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000000;
+  background: #33333300;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 90px;
+  opacity: 0.7;
+  z-index: 1002; /* Ensure arrows appear above other modal elements */
+}
+
+.modal-arrow:hover {
+  opacity: 1;
+}
+
+/* Left Arrow */
+.modal-left-arrow {
+  left: 30px; /* Adjust distance from the left edge */
+}
+
+/* Right Arrow */
+.modal-right-arrow {
+  right: 30px; /* Adjust distance from the right edge */
+}
+
 
 /* Modal Image Wrapper */
 .modal-img-wrapper {
