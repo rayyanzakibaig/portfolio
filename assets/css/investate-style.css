@@ -1,0 +1,202 @@
+:root {
+
+    /**
+       * colors
+       */
+    
+      /* gradient */
+    
+      --bg-gradient-onyx: linear-gradient(
+        to bottom right, 
+        hsl(240, 1%, 25%) 3%, 
+        hsl(0, 0%, 19%) 97%
+      );
+      --bg-gradient-jet: linear-gradient(
+        to bottom right, 
+        hsla(240, 1%, 18%, 0.251) 0%, 
+        hsla(240, 2%, 11%, 0) 100%
+      ), hsl(240, 2%, 13%);
+      --bg-gradient-yellow-1: linear-gradient(
+        to bottom right, 
+        hsl(215, 85%, 50%) 0%, 
+        hsla(36, 100%, 69%, 0) 50%
+      );
+      --bg-gradient-yellow-2: linear-gradient(
+        135deg, 
+        hsla(45, 100%, 71%, 0.251) 0%, 
+        hsla(35, 100%, 68%, 0) 59.86%
+      ), hsl(240, 2%, 13%);
+      --border-gradient-onyx: linear-gradient(
+        to bottom right, 
+        hsl(0, 0%, 25%) 0%, 
+        hsla(0, 0%, 25%, 0) 50%
+      );
+      --text-gradient-yellow: linear-gradient(
+        to right, 
+        hsl(215, 92%, 55%), 
+        hsl(218, 100%, 31%)
+      );
+    
+      /* solid */
+    
+      --jet: hsl(0, 0%, 22%);
+      --onyx: hsl(240, 1%, 17%);
+      --eerie-black-1: hsl(240, 2%, 13%);
+      --eerie-black-2: hsl(240, 2%, 12%);
+      --smoky-black: hsl(0, 0%, 7%);
+      --white-1: hsl(0, 0%, 100%);
+      --white-2: hsl(0, 0%, 98%);
+      --blue: hsl(210, 100%, 50%);
+      --vegas-gold: hsl(210, 61%, 50%);
+      --light-gray: hsl(0, 0%, 84%);
+      --light-gray-70: hsla(0, 0%, 84%, 0.7);
+      --bittersweet-shimmer: hsl(0, 43%, 51%);
+    
+    
+      /**
+       * typography
+       */
+    
+      /* font-family */
+      --ff-poppins: 'Poppins', sans-serif;
+    
+      /* font-size */
+      --fs-1: 24px;
+      --fs-2: 18px;
+      --fs-3: 17px;
+      --fs-4: 16px;
+      --fs-5: 15px;
+      --fs-6: 14px;
+      --fs-7: 13px;
+      --fs-8: 11px;
+    
+      /* font-weight */
+      --fw-300: 300;
+      --fw-400: 400;
+      --fw-500: 500;
+      --fw-600: 600;
+    
+      /**
+       * shadow
+       */
+      
+      --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+      --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+      --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+      --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+      --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+    
+      /**
+       * transition
+       */
+    
+      --transition-1: 0.25s ease;
+      --transition-2: 0.5s ease-in-out;
+    
+    }
+
+  
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-dark); /* White headings for contrast */
+  }
+  
+  /* Links */
+  a {
+    color: var(--primary-color); /* Light purple for links */
+  }
+  
+  a:hover {
+    color: var(--secondary-color); /* Darker purple on hover */
+  }
+  
+  /* Buttons */
+  button {
+    background-color: var(--primary-color); /* Button background */
+    color: var(--bg-dark); /* Dark text color for buttons */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color); /* Darker shade on hover */
+  }
+  
+  /* Cards/Content Containers */
+  .content-card {
+    position: relative;
+    background: var(--border-gradient-onyx);
+    padding: 15px;
+    padding-top: 45px;
+    border-radius: 14px;
+    box-shadow: var(--shadow-2);
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .content-card::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--bg-gradient-jet);
+    border-radius: inherit;
+    z-index: -1;
+  }
+  
+  .content-card {
+    padding: 30px;
+    padding-top: 25px;
+  }
+
+  
+  
+  /* Inputs */
+  input, textarea, select {
+    background: var(--bg-light); /* Match the card color */
+    color: var(--text-color); /* Light text color */
+    border: 1px solid var(--primary-color); /* Light purple border */
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  /* Form Styles */
+  input:focus, textarea:focus, select:focus {
+    border-color: var(--secondary-color); /* Change border color on focus */
+    outline: none; /* Remove outline */
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    background: var(--bg-light); /* Card background for testimonials */
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  /* Modal Styles */
+  [data-modal-container] {
+    background: rgba(18, 18, 18, 0.9); /* Semi-transparent dark background */
+    color: var(--text-color); /* Light text color in modal */
+  }
+  
+  /* Overlay */
+  [data-overlay] {
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  }
+  
+  /* Scrollbar Customization */
+  ::-webkit-scrollbar {
+    width: 8px; /* Width of scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color); /* Scrollbar color */
+    border-radius: 10px; /* Rounded edges */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--bg-dark); /* Background for scrollbar track */
+  }
+  
