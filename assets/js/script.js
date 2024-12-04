@@ -37,13 +37,16 @@ modalTriggers.forEach(item => {
 
     const category = this.querySelector(".portfolio-category"); // Get the category element
 
-    // Check if the category is "Graphic Design"
-    if (category && category.textContent.trim().toLowerCase() === "graphic design") {
-      const imgSrc = this.querySelector("img").src;
-      const imgAlt = this.querySelector("img").alt;
-      modalImg.src = imgSrc;
-      modalImg.alt = imgAlt;
-      toggleModal();
+    // Check if the category is "Graphic Design" or "Art"
+    if (category) {
+      const categoryText = category.textContent.trim().toLowerCase();
+      if (categoryText === "graphic design" || categoryText === "art") {
+        const imgSrc = this.querySelector("img").src;
+        const imgAlt = this.querySelector("img").alt;
+        modalImg.src = imgSrc;
+        modalImg.alt = imgAlt;
+        toggleModal();
+      }
     }
   });
 });
@@ -81,17 +84,18 @@ document.querySelectorAll('.portfolio-post-item a').forEach(item => {
   item.addEventListener('click', function(event) {
     event.preventDefault(); // Prevent page navigation on modal trigger
 
-    // Open the modal only if category is "Graphic Design"
+    // Open the modal only if category is "Graphic Design" or "Art"
     const category = this.querySelector(".portfolio-category");
 
-    if (category && category.textContent.trim().toLowerCase() === "graphic design") {
-      const imgSrc = this.querySelector("img").src;
-      const imgAlt = this.querySelector("img").alt;
-      modalImg.src = imgSrc;
-      modalImg.alt = imgAlt;
-      toggleModal();
+    if (category) {
+      const categoryText = category.textContent.trim().toLowerCase();
+      if (categoryText === "graphic design" || categoryText === "art") {
+        const imgSrc = this.querySelector("img").src;
+        const imgAlt = this.querySelector("img").alt;
+        modalImg.src = imgSrc;
+        modalImg.alt = imgAlt;
+        toggleModal();
+      }
     }
   });
 });
-
-
