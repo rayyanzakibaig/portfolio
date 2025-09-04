@@ -512,7 +512,22 @@ main {
     width: 100%;       /* Set width to 100% for smaller screens */
   }
 }
-
+  /* Increase sidebar height on mobile for better vertical alignment */
+  .sidebar {
+    max-height: 120px;
+  }
+  
+  /* Ensure proper vertical alignment in mobile view */
+  .sidebar-info {
+    align-items: center;
+  }
+  
+  .avatar-box img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+  }
+}
 
 /*-----------------------------------*\
   #NAVBAR
