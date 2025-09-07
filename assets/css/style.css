@@ -25,7 +25,7 @@
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
+    hsla(208, 99%, 37%, 0.251) 0%, 
     hsla(35, 100%, 68%, 0) 59.86%
   ), hsl(240, 2%, 13%);
 
@@ -477,7 +477,7 @@ main {
   align-items: center;
   gap: 15px;
   padding-bottom: 4px;
-  padding-left: 7px;
+  padding-left: 3px;
 }
 
 .social-item .social-link {
@@ -511,7 +511,24 @@ main {
   .project-text {
     width: 100%;       /* Set width to 100% for smaller screens */
   }
+  
+  /* Increase sidebar height on mobile for better vertical alignment */
+  .sidebar {
+    max-height: 120px;
+  }
+  
+  /* Ensure proper vertical alignment in mobile view */
+  .sidebar-info {
+    align-items: center;
+  }
+  
+  .avatar-box img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+  }
 }
+
 
 /*-----------------------------------*\
   #NAVBAR
@@ -960,10 +977,17 @@ main {
   color: var(--blue);
 }
 
+ul {
+  list-style-type: disc; /* This will display bullets */
+  padding-left: 20px;     /* Indent for bullets */
+  color:white
+}
 
-
-
-
+ol {
+  list-style-type: decimal; /* This will display numbers */
+  padding-left: 20px;       /* Indent for numbers */
+  color:white
+}
 
 
 
@@ -1374,6 +1398,8 @@ main {
   border: none;
   filter: grayscale(1) invert(1);
 }
+
+
 
 .contact-form { margin-bottom: 10px; }
 
@@ -2097,9 +2123,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   .contacts-list { grid-template-columns: 1fr; }
 
   .contact-info :is(.contact-link) {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
   }
 
   .contact-info :is(.contact-link, time, address) {
@@ -2112,7 +2138,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     opacity: 0;
   }
 
-  .social-list { justify-content: center; }
+  .social-list { 
+    justify-content: center; 
+    gap: 10px;
+    padding-left: 0;
+  }
 
 
 
