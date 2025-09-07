@@ -523,8 +523,8 @@ main {
   }
   
   .avatar-box img {
-    height: 80px;
-    width: 80px;
+    height: px;
+    width: px;
     object-fit: cover;
   }
 }
